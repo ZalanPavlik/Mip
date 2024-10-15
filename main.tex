@@ -1,0 +1,137 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Získavanie a využitie osobných údajov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2024/25, vedenie: doc. Mgr. Yevheniia Kataieva, PhD.}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Zalán Pavlik\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xpavlikz@stuba.sk}}
+	}
+
+\date{\small 24. september 2024} % upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+S rastúcim využívaním internetu, IOT technológií a všetkými online
+službami preberajú dátovo orientované služby vedúcu úlohu v online aj
+offline podnikaní. Odporúčacie systémy tiež spadajú do kategórie závislej
+od získaných dát či už zo strany jednotlivca alebo väčšiny. Taktiež sú neoddeliteľnou súčasťou online platforiem, pričom ich účinnosť vo veľkej miere
+závisí od získavania a spracovania osobných údajov používateľov. Tieto
+systémy analyzujú preferencie, správanie a interakcie používateľov, aby
+poskytli personalizované odporúčania produktov, služieb alebo obsahu.
+Preto získané údaje sú často ukladané a analyzované pomocou pokročilých algoritmov strojového učenia, čo umožňuje systémom neustále sa učiť
+a prispôsobovať novým trendom a preferenciám používateľov. Zároveň sa
+však otvára otázka, do akej miery je používanie osobných údajov etické
+a ako zabezpečiť, aby boli dodržané všetky normy a práva na ochranu
+súkromia. Kvôli tomuto využívanie osobných údajov prináša tiež značné
+problémy spojené s ochranou súkromia a dodržiavaním legislatívnych noriem a zákonov ako je GDPR. Takisto dôležitou témou je aj transparentnosť algoritmov a ich rozhodovacích procesov, ktorá môže posilniť dôveru
+používateľov voči týmto systémom. Táto práca sa zameriava na spôsoby
+získavania osobných údajov pre odporúčacie systémy, ich využitie na zvýšenie presnosti a efektívnosti odporúčaní, a zároveň skúma etické a právne
+aspekty týkajúce sa ochrany osobných údajov. \cite{key1} \cite{key2}
+\end{abstract}
+
+
+\newpage
+\section{Úvod}
+
+Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+
+Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+Záverečné poznámky prináša časť~\ref{zaver}.
+
+
+
+\section{Získavanie dát cez brokera} \label{broker}
+
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+\includegraphics[scale=0.5]{Diagram 2024-10-08 17-17-57.png}
+\caption{Bloková schéma odkupovania a predávania dát \cite{key1}}
+\label{f:rozhod}
+\end{figure*}
+
+
+
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
